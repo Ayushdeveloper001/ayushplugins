@@ -4,7 +4,7 @@ const {skbuffer} = require('raganork-bot');
 const {MODE} = require('../config');
 let auto = MODE == 'public' ? false : true
 Module({
-  pattern: 'text ?(.*)',
+  pattern: 'link ?(.*)',
   fromMe: auto,
   desc: 'Sends link',
   use: 'utility',
