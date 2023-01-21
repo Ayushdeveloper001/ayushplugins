@@ -3,10 +3,6 @@ const {Module} = require('../main')
 const {skbuffer} = require('raganork-bot');
 const {MODE} = require('../config');
 let auto = MODE == 'public' ? false : true
-
-//================================================
-//              IMAGE SENDER SAMPLE 👇
-// ===============================================
 Module({
   pattern: 'image ?(.*)',
   fromMe: auto,
