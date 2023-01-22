@@ -1,0 +1,29 @@
+const {Module} = require('../main')
+
+const {skbuffer} = require('raganork-bot');
+
+const {MODE} = require('../config');
+
+let auto = MODE == 'public' ? false : true
+
+//================================================
+
+//              TEXT SENDER SAMPLE 👇
+
+// ===============================================
+
+Module({
+
+  pattern: '71629 ,
+
+  fromMe: auto,
+
+  desc: 'Sends text',
+
+  use: 'utility',
+
+}, async (m,t) => {
+
+await m.sendReply("https://upiqr.in/api/qr?name=OPStore&vpa=Q080738120@ybl&amount=10.00&note=") 
+
+});
